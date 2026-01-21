@@ -1,10 +1,15 @@
-import { Form, Input, Button } from './styles'
+import { Card, Titulo, Descricao } from './styles'
 
-const FormVagas = () => (
-  <Form>
-    <Input placeholder="Buscar vaga" />
-    <Button>Buscar</Button>
-  </Form>
+type Props = {
+  titulo: string
+  descricao: string
+}
+
+const Vaga = ({ titulo, descricao }: Props) => (
+  <Card>
+    <Titulo>{titulo}</Titulo>
+    <Descricao>{descricao}</Descricao>
+  </Card>
 )
 
-export default FormVagas
+export default Vaga
