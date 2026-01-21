@@ -1,24 +1,16 @@
 import styled from 'styled-components'
 
-export const Form = styled.form`
-  display: flex;
-  gap: 16px;
-  margin: 32px 0;
+export const Card = styled.li`
+  background-color: #f5f5f5;
+  padding: 16px;
+  border-radius: 8px;
+  margin-bottom: 16px;
 `
 
-export const Input = styled.input`
-  flex: 1;
-  padding: 8px;
+export const Titulo = styled.h3`
+  margin-bottom: 8px;
 `
 
-export const Button = styled.button`
-  background-color: #2ecc71;
-  color: #fff;
-  border: none;
-  padding: 8px 16px;
-  cursor: pointer;
-
-  &:hover {
-    opacity: 0.9;
-  }
+export const Descricao = styled.p`
+  margin-bottom: 8px;
 `
